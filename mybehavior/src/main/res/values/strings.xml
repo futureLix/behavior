@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyBehavior</string>
+    <string name="behavior_sample_title">com.behavior.mybehavior.BottomBehavior</string>
+    <string name="follow_behavior_sample">com.behavior.mybehavior.bottom.FollowBehavior</string>
+    <!--评论-->
+    <string name="dialog_comment_hint_text">有爱评论，说点好听的～</string>
+    <string name="dialog_send_comment_text">发送</string>
+</resources>

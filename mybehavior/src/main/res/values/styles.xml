@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--评论Dialog-->
+    <style name="dialogCommentNumText">
+        <item name="android:textSize">@dimen/dialog_comment_num_size</item>
+        <item name="android:textColor">@color/color_white_100</item>
+    </style>
+
+    <style name="dialogEditCommentText">
+        <item name="android:textSize">@dimen/dialog_comment_num_size</item>
+        <item name="android:textColor">@color/color_white_50</item>
+        <item name="android:textColorHint">@color/color_white_50</item>
+    </style>
+
+    <style name="dialogSendCommentText">
+        <item name="android:textSize">@dimen/dialog_send_comment_size</item>
+        <item name="android:textColor">@color/color_black_50</item>
+    </style>
+    <!--评论-->
+    <style name="commentUserNameText">
+        <item name="android:textSize">@dimen/comment_user_name_size</item>
+        <item name="android:textColor">@color/color_white_100</item>
+    </style>
+
+    <style name="commentContentText">
+        <item name="android:textSize">@dimen/comment_content_size</item>
+        <item name="android:textColor">@color/color_white_100</item>
+    </style>
+
+    <style name="commentLikeText">
+        <item name="android:textSize">@dimen/comment_likes_size</item>
+        <item name="android:textColor">@color/color_white_100</item>
+    </style>
+
+    <style name="commentTimeText">
+        <item name="android:textSize">@dimen/comment_likes_size</item>
+        <item name="android:textColor">@color/color_white_49</item>
+    </style>
+</resources>

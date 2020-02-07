@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorTransparent">
+
+    <ImageView
+        android:id="@+id/comment_cover"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:id="@+id/comment_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toStartOf="@+id/comment_like_layout"
+        android:layout_toEndOf="@+id/comment_cover"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comment_user_name"
+            style="@style/commentUserNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试"/>
+
+        <TextView
+            android:id="@+id/comment_user_content"
+            style="@style/commentContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="5dp"
+            android:text="羊驼。没什么杀伤力。遇到危险的时候会向敌人吐口水以加速自己的死亡。"/>
+
+        <RelativeLayout
+            android:id="@+id/comment_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/view_comment_line"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/view_comment_reply"
+                android:layout_alignBottom="@+id/view_comment_reply"
+                android:background="@color/colorBlack"/>
+
+            <LinearLayout
+                android:id="@+id/view_comment_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/view_comment_line"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reply_name"
+                    android:text="小海"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white_100"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/reply_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="背景音乐是什么"
+                    android:textColor="@color/color_white_100"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/comment_time"
+            style="@style/commentTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018.12.12"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_like_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/comment_like_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_comment_zan"/>
+
+        <TextView
+            android:id="@+id/comment_like_num"
+            style="@style/commentLikeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

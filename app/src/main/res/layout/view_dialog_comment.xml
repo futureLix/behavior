@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dialog_comments_parent">
+
+    <RelativeLayout
+        android:id="@+id/dialog_comments_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_black_100">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_comments_num"
+                style="@style/dialogCommentNumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="15dp" />
+
+            <RelativeLayout
+                android:id="@+id/dialog_close_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_comment_close" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dialog_send_comment"
+            android:layout_below="@+id/rl_title">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dialog_comment_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/dialog_send_comment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/dialog_comments_edit"
+                style="@style/dialogEditCommentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/dialog_send_comment_btn"
+                android:background="@null"
+                android:gravity="start|center"
+                android:hint="@string/dialog_comment_hint_text" />
+
+            <TextView
+                android:id="@+id/dialog_send_comment_btn"
+                style="@style/dialogSendCommentText"
+                android:layout_width="50dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/shape_dialog_send_comment_btn"
+                android:gravity="center"
+                android:text="@string/dialog_send_comment_text"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialog_comment_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dialog_send_comment"
+            android:layout_below="@+id/rl_title"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="还没有评论过哦..."
+                android:textColor="@color/color_white_19" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

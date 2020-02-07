@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!--评论-->
+    <dimen name="dialog_send_comment_size">15sp</dimen>
+    <dimen name="dialog_comment_num_size">14sp</dimen>
+    <dimen name="dialog_edit_comment_size">15sp</dimen>
+    <dimen name="comment_user_name_size">14sp</dimen>
+    <dimen name="comment_content_size">15sp</dimen>
+    <dimen name="comment_likes_size">12sp</dimen>
+</resources>
